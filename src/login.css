@@ -1,0 +1,102 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b57a7a;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/mh.jpg'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-header {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.login-form {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.error {
+  color: #d93025;
+  font-size: 0.75rem; /* Slightly smaller to fit long messages */
+  margin-top: 0.4rem;
+  text-align: left;   /* Keeps it aligned with the input */
+  line-height: 1.2;   /* Better spacing for multiple lines */
+}
+/* Unique Neon Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #e50914; /* Netflix Red */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+}
+
+button:hover {
+  background: #ff0000;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.8);
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+/* Labels */
+label {
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.login-card {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(10px);          /* This creates the frosted glass look */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Soft edge */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  color: #fff; /* White text for better contrast */
+}
+
+/* Make inputs blend in */
+input {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  margin-top: 5px;
+  color: #333;
+}

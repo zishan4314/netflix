@@ -115,7 +115,7 @@ button:hover {
 
   input {
     font-size: 16px; /* Prevents mobile zoom on focus */
-    padding: 12px;
+    padding: 5px;
   }
 
   button {

@@ -100,3 +100,32 @@ input {
   margin-top: 5px;
   color: #333;
 }
+/* Perfect fit for Mobile Devices */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px; /* Adds a small gap so the box doesn't touch the screen edges */
+    align-items: center; 
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 100%; /* Allows the card to take full width on small phones */
+    padding: 30px 20px; /* Slightly less padding to save space */
+    border-radius: 10px; /* Slightly softer corners for mobile */
+  }
+
+  .login-header {
+    font-size: 1.5rem; /* Makes the "Netflix Series" title fit on one line */
+    letter-spacing: 2px;
+  }
+
+  input {
+    font-size: 16px; /* Prevents iOS from auto-zooming when clicking inputs */
+    padding: 5px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

@@ -1,55 +1,77 @@
+/* 1. Main Background Container */
 .login-container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #b57a7a;
- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/assets/mha.jpg'); 
+  /* Dark overlay over a background image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/assets/mha.jpg');  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000; /* Fallback color */
 }
+
+/* 2. The Glassmorphism Login Card */
+.login-card {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(10px); /* The "frosted glass" effect */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+}
+
+/* 3. Typography & Headers */
 .login-header {
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 2rem;
   text-align: center;
-  color: #fff;
   text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.login-form {
-  background: rgb(255, 255, 255);
-  padding: 30px;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.login-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  letter-spacing: 5px;
+  color: #fff;
 }
 
 .form-group {
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
+label {
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+
+/* 4. Inputs */
 input {
   width: 100%;
-  padding: 8px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 8px;
   margin-top: 5px;
+  color: #333;
+  font-size: 1rem;
 }
 
+/* 5. Validation Errors */
 .error {
   color: #d93025;
-  font-size: 0.75rem; /* Slightly smaller to fit long messages */
+  font-size: 0.75rem;
   margin-top: 0.4rem;
-  text-align: left;   /* Keeps it aligned with the input */
-  line-height: 1.2;   /* Better spacing for multiple lines */
+  text-align: left;
+  line-height: 1.2;
 }
-/* Unique Neon Button */
+
+/* 6. The "Netflix Red" Button */
 button {
   width: 100%;
   padding: 14px;
@@ -64,64 +86,36 @@ button {
   cursor: pointer;
   margin-top: 2rem;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+  box-shadow: 0 4px 10px rgba(229, 9, 20, 0.4);
 }
 
 button:hover {
-  background: #ff0000;
-  box-shadow: 0 0 20px rgba(229, 9, 20, 0.8);
+  background: #ff0008;
+  box-shadow: 0 8px 20px rgba(229, 9, 20, 0.6);
   transform: translateY(-2px); /* Slight lift on hover */
 }
-/* Labels */
-label {
-  color: #ffffff;
-  font-weight: 500;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
-.login-card {
-  background: rgba(255, 255, 255, 0.1); /* Transparent white */
-  backdrop-filter: blur(10px);          /* This creates the frosted glass look */
-  -webkit-backdrop-filter: blur(10px);
-  padding: 3rem;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Soft edge */
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-  width: 100%;
-  max-width: 400px;
-  color: #fff; /* White text for better contrast */
-}
 
-/* Make inputs blend in */
-input {
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  border-radius: 8px;
-  padding: 14px;
-  margin-top: 5px;
-  color: #333;
-}
-/* Perfect fit for Mobile Devices */
+/* 7. Mobile Responsiveness - Perfect Fit */
 @media (max-width: 480px) {
   .login-container {
-    padding: 10px; /* Adds a small gap so the box doesn't touch the screen edges */
-    align-items: center; 
+    padding: 10px;
   }
 
   .login-card {
     width: 100%;
-    max-width: 100%; /* Allows the card to take full width on small phones */
-    padding: 30px 20px; /* Slightly less padding to save space */
-    border-radius: 10px; /* Slightly softer corners for mobile */
+    max-width: 100%;
+    padding: 30px 20px;
+    border-radius: 10px;
   }
 
   .login-header {
-    font-size: 1.5rem; /* Makes the "Netflix Series" title fit on one line */
+    font-size: 1.5rem;
     letter-spacing: 2px;
   }
 
   input {
-    font-size: 16px; /* Prevents iOS from auto-zooming when clicking inputs */
-    padding: 5px;
+    font-size: 16px; /* Prevents mobile zoom on focus */
+    padding: 12px;
   }
 
   button {
@@ -129,3 +123,5 @@ input {
     font-size: 1rem;
   }
 }
+
+

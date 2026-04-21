@@ -68,5 +68,15 @@
     "cast": ["Kim Soo Hyun", "Kim Ji Won"],
     "genre": ["Drama", "Romance"],
     "watch_url": "https://www.viki.com/tv/23456789c-queen-of-tears"
+  },
+    {
+    "name": "avengers",
+    "id": "avengers",
+    "img_url": "/images/av.webp",
+    "rating": "9.1",
+    "description": "The Avengers are a team of extraordinary individuals who possess either superpowers or other special characteristics.",
+    "cast": ["Nick Fury", "Sam Wilson"],
+    "genre": ["Adventure", "Action"],
+    "watch_url": "https://marvelcinematicuniverse.fandom.com/wiki/Avengers"
   }
 ]

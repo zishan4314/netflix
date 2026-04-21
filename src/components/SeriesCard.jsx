@@ -4,7 +4,7 @@
   return (
     <li className="card">
       <div className="card-image">
-        <img src={img_url} alt={name} width="100%" height="auto" />
+        <img src={img_url} alt={name} width="100%" height="100%" />
       </div>
       <div className="card-content">
         <h2>{name}</h2>

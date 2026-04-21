@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Login from "./components/Login"; // Adjust path if needed
+import Login from "./components/login"; // Adjust path if needed
 import  NetflixSeries  from "./components/NetflixSeries"; // Adjust path if needed
 
 function App() {

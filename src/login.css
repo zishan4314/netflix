@@ -29,7 +29,7 @@
 /* 3. Typography & Headers */
 .login-header {
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 400;
   margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -65,7 +65,7 @@ input {
 /* 5. Validation Errors */
 .error {
   color: #d93025;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   margin-top: 0.4rem;
   text-align: left;
   line-height: 1.2;

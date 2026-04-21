@@ -7,20 +7,22 @@
   color: white;
 }
 
-/* The Grid System */
+/* Update your existing .grid-layout or ul class */
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 2rem;
-  list-style: none;
+  gap: 1.5rem;
+  padding: 1rem;
+  /* This creates 1 column on small phones and automatically adds more on tablets/laptops */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
 }
 
 /* Individual Card Styling */
 .card {
-  background-color: #222;
-  border-radius: 10px;
+  background-color: #de9d7e;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
 }
 
@@ -29,7 +31,7 @@
 }
 
 .card-content {
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 
 .watch-button {
@@ -42,10 +44,25 @@
   cursor: pointer;
   margin-top: 10px;
 }
-
-/* Responsive for Mobile */
 @media (max-width: 768px) {
-  .grid-layout {
-    grid-template-columns: 1fr;
+  .main-heading {
+    font-size: 1.5rem; /* Make the title slightly smaller for mobile */
+    margin-top: 1rem;
   }
+
+  .series-container {
+    padding: 0.5rem; /* Reduce extra side space */
+  }
+
+  /* Ensure the card takes up most of the screen width but stays centered */
+  .grid-layout {
+    grid-template-columns: 1fr; 
+    padding: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

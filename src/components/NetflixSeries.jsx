@@ -4,7 +4,7 @@
 export const NetflixSeries = () => {
   return (
     <div className="series-container">
-      <h1 className="main-heading">Recommended for You</h1>
+      <h1 className="main-heading">Best trending series for You</h1>
       <ul className="grid-layout">
 {SeriesData.map((cureElem) => (
   <SeriesCard key={cureElem.id} data={cureElem}/>

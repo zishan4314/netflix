@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   /* Dark overlay over a background image */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/assets/mha.jpg');  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/mha.jpg');  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

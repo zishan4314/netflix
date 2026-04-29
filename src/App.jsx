@@ -4,7 +4,7 @@ import  NetflixSeries  from "./components/NetflixSeries"; // Adjust path if need
 
 function App() {
   // This state tracks if we are logged in or not
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   // Function to switch from Login to Main Page
   const handleLoginSuccess = () => {

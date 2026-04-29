@@ -78,19 +78,158 @@ body {
   background-color: #e7fd44;
   font-weight: bold;
 }
-.main-heading {
+
+/* Netflix Solid Heading Box */
+.netflix-heading-box {
+  background: #eb7979;
+  padding: 2.5rem 3rem;
+  margin: 2rem auto;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 90%;
+  min-width: 280px;
+  box-shadow: 
+    0 10px 40px rgba(184, 154, 154, 0.4),
+    0 0 20px rgba(215, 67, 67, 0.3);
+  border: 2px solid #a83030;
+  transition: all 0.3s ease;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 80%;
-  /* The "Box" style: Glassmorphism */
-  background: rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 55px;
-  box-shadow: 0 8px 32px 0 rgba(238, 114, 36, 0.8);
-  
-  
+  justify-content: center;
 }
+
+.netflix-heading-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 15px 50px rgba(229, 9, 20, 0.4),
+    0 0 30px rgba(229, 9, 20, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.netflix-logo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.netflix-bg-icon {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 10px rgba(229, 9, 20, 0.3));
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.netflix-logo-container:hover .netflix-bg-icon {
+  transform: scale(1.1);
+}
+
+.netflix-logo-text {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #e50914;
+  margin: 0;
+  letter-spacing: 4px;
+  text-shadow: 0 4px 20px rgba(229, 9, 20, 0.5);
+  font-family: 'Arial Black', Arial, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.main-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+@media (max-width: 1024px) {
+  .netflix-heading-box {
+    padding: 2rem 2.5rem;
+    margin: 1.5rem auto;
+    max-width: 85%;
+  }
+
+  .netflix-bg-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .netflix-logo-text {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+
+  .main-heading {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .netflix-heading-box {
+    padding: 1.5rem 1rem;
+    margin: 1rem auto;
+    border-radius: 12px;
+    max-width: 95%;
+  }
+
+  .netflix-logo-container {
+    margin-bottom: 0.75rem;
+  }
+
+  .netflix-bg-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .netflix-logo-text {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .main-heading {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .netflix-heading-box {
+    padding: 1rem 0.75rem;
+    margin: 0.75rem auto;
+    border-radius: 10px;
+  }
+
+  .netflix-logo-container {
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .netflix-bg-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .netflix-logo-text {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+  }
+
+  .main-heading {
+    font-size: 0.95rem;
+    letter-spacing: 0.8px;
+  }
+}
+
